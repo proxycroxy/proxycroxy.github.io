@@ -426,29 +426,14 @@ A：尝试更换协议、节点、DNS设置，或联系服务商技术支持。<
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Clash 节点延迟检测如何优化网络访问？</h5></div>
+    <div class="panel-heading"><h5>Nekobox 导入 Clash 订阅后规则丢失，可能原因？</h5></div>
     <div class="panel-body">
-        Clash 会定期测试节点延迟，并结合策略组自动选择最优节点。避免访问高延迟或失效节点，提升网页浏览、视频播放和游戏速度及稳定性，提高整体网络体验。<hr />    </div>
+        部分客户端在解析订阅时只保留节点信息而忽略 rules 或 proxies-group，建议使用支持完整解析的订阅转换器（如 sub-converter）先将订阅转换为兼容格式再导入，或手动合并规则文件。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Potatso Lite 是否支持手动节点管理？</h5></div>
     <div class="panel-body">
         支持。用户可手动输入节点信息或扫描二维码导入节点，并可进行修改或删除。虽然不支持自动订阅更新，但足以满足轻量用户对节点管理和流量分流的需求。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>SSR 的混淆参数如何选择才能兼顾速度与隐蔽性？</h5></div>
-    <div class="panel-body">
-        混淆参数建议根据网络环境选择，一般 http_simple 兼容性最好，tls1.2_ticket_auth 隐蔽性更强。若节点在国内访问，选择简单混淆可提升速度，若跨境访问频繁则推荐 TLS 混淆提高安全性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 的加密方式如何选择？</h5></div>
-    <div class="panel-body">
-        VMess 支持自动加密和 AEAD 加密等多种方式。AEAD 加密更安全且抗重放攻击，适合高安全性需求的网络环境，而普通加密在性能上稍快，但安全性略低。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Quantumult X 可以用脚本自动切换节点吗？</h5></div>
-    <div class="panel-body">
-        可以。Quantumult X 支持通过脚本逻辑判断网络延迟或连接失败情况，并自动切换节点。用户可以编写自定义 JS 规则，从而实现智能代理与按需分流，适合高级用户使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>如何安全地在服务器上部署 V2Ray（最小权限原则）？</h5></div>
@@ -461,19 +446,34 @@ A：尝试更换协议、节点、DNS设置，或联系服务商技术支持。<
         用户可根据网络延迟和用途手动切换节点，选择最优节点处理不同流量。虽然不支持自动更新，但在节点不稳定或特定需求下可以灵活调整，提高访问效率。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
+    <div class="panel-body">
+        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 的加密方式如何选择？</h5></div>
+    <div class="panel-body">
+        VMess 支持自动加密和 AEAD 加密等多种方式。AEAD 加密更安全且抗重放攻击，适合高安全性需求的网络环境，而普通加密在性能上稍快，但安全性略低。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>SSR 的协议插件如何增强连接稳定性？</h5></div>
     <div class="panel-body">
         SSR 的协议插件可以增加流量的伪装特性，模拟常见协议或浏览器行为，从而降低被识别和封锁的风险。这对不稳定网络或高封锁环境尤其有帮助。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekobox 导入 Clash 订阅后规则丢失，可能原因？</h5></div>
+    <div class="panel-heading"><h5>Quantumult X 可以用脚本自动切换节点吗？</h5></div>
     <div class="panel-body">
-        部分客户端在解析订阅时只保留节点信息而忽略 rules 或 proxies-group，建议使用支持完整解析的订阅转换器（如 sub-converter）先将订阅转换为兼容格式再导入，或手动合并规则文件。<hr />    </div>
+        可以。Quantumult X 支持通过脚本逻辑判断网络延迟或连接失败情况，并自动切换节点。用户可以编写自定义 JS 规则，从而实现智能代理与按需分流，适合高级用户使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
+    <div class="panel-heading"><h5>SSR 的混淆参数如何选择才能兼顾速度与隐蔽性？</h5></div>
     <div class="panel-body">
-        V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。    </div>
+        混淆参数建议根据网络环境选择，一般 http_simple 兼容性最好，tls1.2_ticket_auth 隐蔽性更强。若节点在国内访问，选择简单混淆可提升速度，若跨境访问频繁则推荐 TLS 混淆提高安全性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Clash 节点延迟检测如何优化网络访问？</h5></div>
+    <div class="panel-body">
+        Clash 会定期测试节点延迟，并结合策略组自动选择最优节点。避免访问高延迟或失效节点，提升网页浏览、视频播放和游戏速度及稳定性，提高整体网络体验。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -502,16 +502,16 @@ A：尝试更换协议、节点、DNS设置，或联系服务商技术支持。<
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-4-16-free-subscribe-node.htm" title="Proxy Croxy节点 | 4月16日18.2M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月16日18.2M/S|免费V2ray节点/Trojan节点/SSR节点/Clash节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-shadowrocket-node.htm" title="Proxy Croxy节点 | 4月13日21.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月13日21.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-14-free-subscribe-node.htm" title="Proxy Croxy节点 | 4月14日21.8M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月14日21.8M/S|免费Singbox节点/Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-6-free-subscribe-node.htm" title="Proxy Croxy节点 | 5月6日20.6M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月6日20.6M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-1-free-shadowrocket-node.htm" title="Proxy Croxy节点 | 5月1日20.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月1日20.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-12-clash-node-daily-updates.htm" title="Proxy Croxy节点 | 4月12日20.2M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月12日20.2M/S|免费Clash节点/Singbox节点/Trojan节点/SSR节点/Shadowrocket节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-18-free-v2ray.htm" title="Proxy Croxy节点 | 4月18日20M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月18日20M/S|免费Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-22-free-ssr-subscribe.htm" title="Proxy Croxy节点 | 4月22日22.5M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月22日22.5M/S|免费Trojan节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-5-shadowrocket-node.htm" title="Proxy Croxy节点 | 5月5日21.5M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月5日21.5M/S|免费SSR节点/Clash节点/Singbox节点/Trojan节点/V2ray节点/Shadowrocket节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-11-clash-windows.htm" title="Proxy Croxy节点 | 5月11日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月11日19.7M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-13-shadowrocket-node.htm" title="Proxy Croxy节点 | 4月13日21.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月13日21.3M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/SSR节点/Clash节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-node-share-links.htm" title="Proxy Croxy节点 | 5月7日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月7日20.3M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Clash节点/Trojan节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-28-clash-v2ray-ss-ssr.htm" title="Proxy Croxy节点 | 4月28日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月28日21.9M/S|免费V2ray节点/Trojan节点/Clash节点/Shadowrocket节点/Singbox节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-3-node-share.htm" title="Proxy Croxy节点 | 5月3日19.3M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月3日19.3M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/Trojan节点/Clash节点/SSR节点节点推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-21-clash-node.htm" title="Proxy Croxy节点 | 4月21日22.8M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月21日22.8M/S|免费Shadowrocket节点/Clash节点/Trojan节点/Singbox节点/SSR节点/V2ray节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-1-free-shadowrocket-node.htm" title="Proxy Croxy节点 | 5月1日20.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月1日20.9M/S|免费Clash节点/Trojan节点/Shadowrocket节点/SSR节点/V2ray节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-clash-node.htm" title="Proxy Croxy节点 | 5月2日20.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 5月2日20.2M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-27-clash-node-daily-updates.htm" title="Proxy Croxy节点 | 4月27日21.9M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐">Proxy Croxy节点 | 4月27日21.9M/S|免费V2ray节点/SSR节点/Singbox节点/Shadowrocket节点/Trojan节点/Clash节点节点推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -523,10 +523,10 @@ A：尝试更换协议、节点、DNS设置，或联系服务商技术支持。<
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
