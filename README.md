@@ -1,4 +1,4 @@
-# Proxy Croxy节点 | 9月29日19.7M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-09-29 10:25:24
+# Proxy Croxy节点 | 10月6日20.9M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点节点推荐，在线Clash机场梯子购买推荐  更新时间 2026-10-06 10:03:26
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://proxycroxy.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://proxycroxy.github.io/uploads/2026/09/0-20260929.yaml
-- https://proxycroxy.github.io/uploads/2026/09/1-20260929.yaml
-- https://proxycroxy.github.io/uploads/2026/09/2-20260929.yaml
-- https://proxycroxy.github.io/uploads/2026/09/3-20260929.yaml
-- https://proxycroxy.github.io/uploads/2026/09/4-20260929.yaml
+- https://proxycroxy.github.io/uploads/2026/10/0-20261006.yaml
+- https://proxycroxy.github.io/uploads/2026/10/1-20261006.yaml
+- https://proxycroxy.github.io/uploads/2026/10/2-20261006.yaml
+- https://proxycroxy.github.io/uploads/2026/10/3-20261006.yaml
+- https://proxycroxy.github.io/uploads/2026/10/4-20261006.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://proxycroxy.github.io/uploads/2026/09/0-20260929.txt
-- https://proxycroxy.github.io/uploads/2026/09/1-20260929.txt
-- https://proxycroxy.github.io/uploads/2026/09/2-20260929.txt
-- https://proxycroxy.github.io/uploads/2026/09/3-20260929.txt
-- https://proxycroxy.github.io/uploads/2026/09/4-20260929.txt
+- https://proxycroxy.github.io/uploads/2026/10/0-20261006.txt
+- https://proxycroxy.github.io/uploads/2026/10/1-20261006.txt
+- https://proxycroxy.github.io/uploads/2026/10/2-20261006.txt
+- https://proxycroxy.github.io/uploads/2026/10/3-20261006.txt
+- https://proxycroxy.github.io/uploads/2026/10/4-20261006.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://proxycroxy.github.io/uploads/2026/09/20260929.json
+- https://proxycroxy.github.io/uploads/2026/10/20261006.json
 
 ## 更多Clash节点订阅 ：
 
